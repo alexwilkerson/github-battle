@@ -11,7 +11,7 @@ import {
 import Card from "./Card";
 import PropTypes from "prop-types";
 import Loading from "./Loading";
-import ToolTip from "./ToolTip";
+import Tooltip from "./Tooltip";
 
 function ProfileList({ profile }) {
   return (
@@ -22,18 +22,18 @@ function ProfileList({ profile }) {
       </li>
       {profile.location && (
         <li>
-          <ToolTip text="User's Location">
+          <Tooltip text="User's Location">
             <FaCompass color="rgb(144, 115, 255)" size={22} />
             {profile.location}
-          </ToolTip>
+          </Tooltip>
         </li>
       )}
       {profile.company && (
         <li>
-          <ToolTip text="User's Company">
+          <Tooltip text="User's Company">
             <FaBriefcase color="#795548" size={22} />
             {profile.company}
-          </ToolTip>
+          </Tooltip>
         </li>
       )}
       <li>
