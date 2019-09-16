@@ -49,6 +49,10 @@ li {
   color: inherit;
 }
 
+.nav li {
+  margin-right: 10px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +60,10 @@ li {
 
 .space-around {
   justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .header-lg {
@@ -256,4 +264,14 @@ li {
 .player-inputs .input-dark {
   color: #dadada;
   background: rgba(0, 0, 0, 0.3);
+}
+
+.btn-light {
+  color: #000;
+  background: #aaa8a8;
+}
+
+.btn-light:disabled {
+  background: #292929;
+  color: #4a4a4a;
 }
