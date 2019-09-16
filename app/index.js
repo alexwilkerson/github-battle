@@ -28,7 +28,7 @@ class App extends React.Component {
             <div className="container">
               <Nav />
 
-              <React.Suspense fallback={Loading}>
+              <React.Suspense fallback={<Loading />}>
                 <Switch>
                   <Route exact path="/" component={Popular} />
                   <Route exact path="/battle" component={Battle} />
